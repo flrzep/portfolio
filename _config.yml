@@ -1,3 +1,7 @@
+title: "Flo's Portfolio"
+description: "portfolio"
+
+
 collections:
   authors:
     output: true
@@ -17,3 +21,9 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+remote_theme: pages-themes/cayman@v0.2.0
+#remote_theme: pages-themes/time-machine@v0.2.0
+
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
