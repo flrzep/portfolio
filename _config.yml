@@ -1,6 +1,17 @@
 title: "Flo's Portfolio"
-description: "portfolio"
+# this means to ignore newlines until "baseurl:"
+description: "blablabla blablabla blabla "
 
+email: "f.rzepczyk@gmail.com"
+domain: flrzep.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://flrzep.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /portfolio/      # place folder name if the site is served in a subfolder
+
+twitter_username:
+github_username:
+
+# Build settings
+markdown: kramdown
 
 collections:
   authors:
@@ -34,6 +45,3 @@ plugins:
 - jekyll-sitemap
 - jekyll-seo-tag
 
-domain: flrzep.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://flrzep.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /portfolio/      # place folder name if the site is served in a subfolder
