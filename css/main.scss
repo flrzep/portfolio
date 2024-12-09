@@ -1,7 +1,6 @@
 ---
 ---
-
-@charset "utf-8";
+//@charset 'UTF-8';
 
 // Example Defaults
 // $base-font-family: Helvetica, Arial, sans-serif;
@@ -34,8 +33,11 @@
 // }
 
 // variables.less
-$theme-primary: #91A2FA;
-$theme-dark: #222;
+$theme-primary: #2f2f2f;
+$theme-secondary: #A8CFB2;
+$theme-tertiary: #57966B;
+$theme-faded: #bbc2bd;
+$theme-dark: #010101;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

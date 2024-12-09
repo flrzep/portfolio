@@ -17,12 +17,12 @@ gem "jekyll"
 #gem "github-pages", group: :jekyll_plugins
 #gem "minima"
 #gem "minima", "~> 2.5"
-gem "github-pages", "~> GITHUB-PAGES-VERSION", group: :jekyll_plugins
+#gem "github-pages", "~> GITHUB-PAGES-VERSION", group: :jekyll_plugins
 
-# gem "github-pages", group: :jekyll_plugins
+gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+#  gem "jekyll-feed", "~> 0.12"
   gem "jekyll-timeago", "~> 0.13.1"
   gem "jekyll-sitemap"
   gem "jekyll-feed"
@@ -45,3 +45,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 
 
+gem "webrick", "~> 1.9"
