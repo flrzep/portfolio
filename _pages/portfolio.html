@@ -16,10 +16,13 @@ title: Photography
 </div>
 
 
-<div class="pf-wrapper">   
-    {% for page in site.pages %}
-                {% if page.category == "project" %}
-                <div class="col-lg-4 col-sm-4">
+<div class="pf-wrapper container">  
+    <div class="row-cols-3">
+
+
+        {% for page in site.pages %}
+            {% if page.category == "project" %}
+                <div class="col-lg-4 col-sm-4 pf-object">
                     <a href="{{page.url}}" class="portfolio-box">
                         <img src="{{ '/assets/img/portfolio/' | append:page.img | append: '.jpg' | relative_url }}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -34,13 +37,13 @@ title: Photography
                         </div>
                     </a>
                 </div>
-                {% endif %}
+            {% endif %}
 
-            {% endfor %}
+        {% endfor %}
 
+    </div> 
 
 </div>
 
 <div class="footer">
-    some text
 </div>

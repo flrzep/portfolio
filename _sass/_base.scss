@@ -289,7 +289,7 @@ header {
             z-index: 1;
             position: absolute;
             left: 60vw;
-            top: 48vh;
+            top: 85vh;
             flex-grow: 0;
             display: block;
             //background: transparent;
@@ -304,7 +304,7 @@ header {
             //max-width: 300px;
 
 
-            //transform: translateY(-10vh);
+            transform: translateY(-300px);
         }
 
 }
@@ -922,6 +922,10 @@ header {
     width: 100%;
     padding: 40px;
 }
+
+.pf-object{
+    padding: 0px;
+} 
 
 
 // Bootstrap Overrides
