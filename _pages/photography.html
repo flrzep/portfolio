@@ -1,0 +1,125 @@
+---
+layout: default
+title: Photography
+---
+
+
+<div class="nav-bg"></div>
+
+
+<div class="gallery-wrapper">
+
+
+    <ul class="gallery ">
+
+        {% for image in site.data.images %}
+
+        <!--
+        <li>
+            <img class="gallery-img" src="{{ '/assets/img/gallery/' | append: image.name | append: '.jpg' | absolute_url }}" alt="{{ image.name }}">
+        </li>
+        -->
+
+        <li class="photo-grid-item  {{ image.orientation}} ">
+            <figure>
+            <picture>
+                <source 
+                srcset="{{ '/assets/img/gallery/' | append: image.name | append: '.jpg' | absolute_url }}" 
+                media="(max-width: 3000px)">
+                <img class="gallery-img" src="{{ '/assets/img/gallery/' | append: image.name | append: '.jpg' | absolute_url }}" alt="">
+            </picture>
+            <figcaption>
+                <fieldset>
+                <input id="{{ image.name }}" type="checkbox">
+                <label class="gallery photo-close" for="{{ image.name }}"></label>
+                <label class="gallery photo-link" for="{{ image.name }}">
+                    <svg class="gallery icon" viewBox="0 0 100 100">
+                    <circle cx="49" cy="49" r="36"></circle>
+                    <path d="M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"></path>
+                    </svg>
+                </label>
+                <dl>
+                <!--
+                    <label for="{{ image.name }}">
+                    <svg class="gallery icon" viewBox="0 0 100 100">
+                        <polyline points="14 32 50 68 86 32"></polyline>
+                    </svg>
+                    </label>
+                    -->
+                    <div>
+                    <dt>Date</dt>
+                    <dd>{{ image.date }}</dd>
+                    </div>
+                    <div>
+                    <dt>Location</dt>
+                    <dd>{{ image.location }}</dd>
+                    </div>
+                    <div>
+                    <dt>Camera</dt>
+                    <dd>{{ image.camera }}</dd>
+                    </div>
+                    
+                </dl>
+                <!--
+                <a class="gallery photo-link" target="_blank" href="{{ '/assets/img/gallery/' | append: image.name | append: '.jpg' | absolute_url }}" tabindex="-1">
+                    <svg class="gallery icon" viewBox="0 0 100 100">
+                    <path d="M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"></path>
+                    </svg>
+                </a>
+                -->
+                </fieldset>
+            </figcaption>
+            </figure>
+        </li>
+
+
+
+        <!--
+        %main{:ontouchstart => true}
+        %section.photo-grid
+            %ul.grid-isotope
+                - @images.each do |image|
+                    %li.photo-grid-item
+                        %figure
+                            %picture
+                                %source{:srcset => "https://gabriellew.ee/static/images/photography/#{image['name']}.jpg, https://gabriellew.ee/static/images/photography/#{image['name']}.jpg 2x", :media => "(max-width: 3000px)"}
+                                %img{:src => "https://gabriellew.ee/static/images/photography/#{image['name']}.jpg", :alt => ""}
+                            %figcaption
+                                %fieldset
+                                    %input{:id => "#{image['name']}", :type => "checkbox"}
+                                    %label.photo-close{:for => "#{image['name']}"}
+                                    %label.photo-link{:for => "#{image['name']}"}
+                                        %svg.icon{:viewBox => "0 0 100 100"}
+                                            %circle{:cx => "49", :cy => "49", :r => "36"}
+                                            %path{:d => "M45,69 L55,69 M45,39 L50,39 L50,69 M49.5,29 L50,29"}
+                                    %dl
+                                        %label{:for => "#{image['name']}"}
+                                            %svg.icon{:viewBox  => "0 0 100 100"}
+                                                %polyline{:points => "14 32 50 68 86 32"}
+                                        %div
+                                            %dt Date
+                                            %dd= image['date']
+                                        %div
+                                            %dt Location
+                                            %dd= image['location']
+                                        %div
+                                            %dt Camera
+                                            %dd iPhone 12 Pro Max
+                                        %div
+                                            %dt Editor
+                                            %dd VSCO
+                                        %a.photo-link{:target => "_blank", :href => "https://gabriellew.ee/static/images/photography/#{image['name']}.jpg", :tabindex => "-1"}
+                                            %svg.icon{:viewBox => "0 0 100 100"}
+                                                %path{:d => "M82,38 L82,78.9930191 C82,80.6537288 80.663269,82 78.9989882,82 L21.0010118,82 C19.3435988,82 18,80.663269 18,78.9989882 L18,21.0010118 C18,19.3435988 19.3408574,18 21.0069809,18 L62,18 M88.9559283,10.8111066 L57.9878833,42.132705 M69.2453268,10.8994949 L89.0443166,10.8994949 L89.0443166,30.6984848"}
+        -->						
+        {% endfor %}
+    </ul>
+
+
+    
+
+</div>
+
+<div class="footer">
+    some text
+</div>

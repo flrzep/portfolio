@@ -1,0 +1,35 @@
+- name: "1"
+  date: "10.03.2024"
+  location: "Morgins, CH"
+  camera: "Nikon Nikkkormat - PORTRA 400"
+  orientation: v
+- name: "2"
+  date: "10.03.2024"
+  location: "Morgins, CH"
+  camera: "Nikon Nikkkormat - PORTRA 400"
+  orientation: h
+- name: "4"
+  date: "10.03.2024"
+  location: "Morgins, CH - Teleski de Corbeau"
+  camera: "Nikon Nikkkormat - PORTRA 400"
+  orientation: v
+- name: "5"
+  date: "10.03.2024"
+  location: "Morgins, CH"
+  camera: "Nikon Nikkkormat - PORTRA 400"
+  orientation: v
+- name: "6"
+  date: "10.03.2024"
+  location: "Morgins, CH"
+  camera: "Nikon Nikkkormat - PORTRA 400"
+  orientation: v
+- name: "8"
+  date: "10.03.2024"
+  location: "München, DE -  Josephsplatz"
+  camera: "Nikon Nikkkormat - PORTRA 400"
+  orientation: v
+- name: "9"
+  date: "10.03.2024"
+  location: "Dinslaken, DE"
+  camera: "Nikon Nikkkormat - PORTRA 400"
+  orientation: v
