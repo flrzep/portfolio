@@ -4,14 +4,16 @@
 {% include head.html %}
 
 <body id="page-top">
+  {% include importmap.html %}
   {% include nav.html %}
   {% include header.html %}
   {% include about.html %}
   {% include portfolio.html %}
-  {% include photography.html %}
-  {% include aside.html %}
   {% include contact.html %}
   {% include scripts.html %}
+
+  <script type="module" src="{{ 'js/gltfscene.js' | absolute_url }}"></script>
+
 </body>
 
 </html>
