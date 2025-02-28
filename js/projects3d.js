@@ -1,4 +1,11 @@
+---
+layout: null
+---
+
+
 import * as THREE from 'three';
+
+//v3
 
 
 /*
@@ -15,9 +22,11 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 let scene, camera, renderer, loader, currentModel, container, directionalLight, ambientLight;
 
 let models = [
-    '01_macropad.glb, 02_putter.glb, '
+    '01_macropad.glb',
+    '02_putter.glb'
 ]; // Define model in a higher scope
 
+var modelNr = 0;
 
 
 function init() {
@@ -55,7 +64,7 @@ function init() {
     updateCamera();
 
     loader = new GLTFLoader();
-    loadModel("/assets/models/cad/01_macropad.glb"); // Load initial model
+    loadModel("{{ '/assets/models/cad/01_macropad.glb' | relative_url }}"); // Load initial model
 
     animate();
 }
@@ -74,8 +83,6 @@ function updateCamera() {
 }
 
 
-
-
 function loadModel(modelPath) {
     if (currentModel) {
         scene.remove(currentModel); // Remove old model
@@ -90,13 +97,33 @@ function loadModel(modelPath) {
     });
 }
 
-// Button Click Event
-document.getElementById("changeModelBtn").addEventListener("click", () => {
-    changeModel("/assets/models/cad/02_putter.glb");
-    console.log("Button");
+// Button forward
+document.getElementById("changeFwd").addEventListener("click", () => {
+   modelNr += 1;
+    changeModel();
 });
 
-function changeModel(newModelPath) {
+// Button backward
+document.getElementById("changeBwd").addEventListener("click", () => {
+    modelNr -= 1;
+    changeModel();
+});
+
+
+function changeModel() {
+    
+    if (modelNr >= models.length ) {
+        modelNr = 0;    
+    } else if (modelNr < 0) {
+        modelNr = models.length;
+    }
+
+    console.log(modelNr);
+
+    let newModelPath = {{ site.baseurl }} + 'assets/models/cad/' + models[modelNr]
+
+    console.log(newModelPath);
+
     loadModel(newModelPath);
 }
 
@@ -109,5 +136,3 @@ function animate() {
 
 
 init();
-
-

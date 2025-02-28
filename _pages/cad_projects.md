@@ -8,7 +8,7 @@ img: blender_ma
 
 ### Introduction
 
-To support the presentation of my thesis visually, I decided to make a few clips in Blender. I find, that in robotics you often find yourself gesturing the position that the robot arm is currently in, as it's often quite hard to keep everyone aligned on what is going on. So for my final presentation, I wanted some help to explain wha
+Collection of CAD Models I made in the last couple of years.
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,8 +18,13 @@ To support the presentation of my thesis visually, I decided to make a few clips
 
 <br>
 
-<button id="changeModelBtn">Change Model</button>
+<div class="container" >
+
+    <button class="btn" id="changeBwd"> < </button>
+
+    <button class="btn" id="changeFwd"> > </button>
+
+</div>
 
 
-
-<script type="module" src="{{ 'js/projects3d.js' | absolute_url }}"></script>
+<script type="module" src="{{ 'js/projects3d.js' | relative_url }}"></script>
