@@ -110,7 +110,8 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color:  rgba(0, 0, 0, 0.5);
+        background-color: rgba(100, 100, 100, 0.2);
+        backdrop-filter: blur(10px);
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
@@ -188,8 +189,8 @@ header {
         margin: auto;
         width: 1500px;
         max-width: 80vw;
-        height: 1200px;
-        max-height: 60vh;
+        height: 1300px;
+        max-height: 70vh;
         position: absolute;
         left: 50vw;
         top: 50vh;
@@ -203,13 +204,13 @@ header {
         border-width: 0.5px;
         border-radius: 20px; /* Optional: rounded corners */
 
-        background-color:  rgba(100, 100, 100, 0.2); /* Low opacity white */
-        backdrop-filter: blur(10px); /* Creates the blur effect */
+        background-color:  rgba(100, 100, 100, 0.0); /* Low opacity white */
+        //backdrop-filter: blur(10px); /* Creates the blur effect */
         //border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: border for styling */
         //padding: 20px; /* Optional: space inside the div */
         color: white; /* Adjust text color for visibility */
         
-        box-shadow: 12px 12px 3px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */ 
+        //box-shadow: 12px 12px 3px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */ 
         
         
         margin-bottom: 0px;
@@ -231,28 +232,30 @@ header {
             text-align: justify;
             text-align-last: center;
 
-            padding: 10px 15% 10px 15%;
+            padding: 10px 10% 10px 10%;
 
             .name {
                 font-size: 3rem;
                 text-transform: uppercase;
+                text-align: right;
+                text-align-last: right;
                 color: rgba(white, 1.0);
-                text-align-last: left;
+                margin-top: 40px;
             }
 
             .description {
                 font-size: 2rem;
-                text-align-last: left;
+                text-align-last: right;
                 color: rgba(white, .7);
                 margin-bottom: 40px;
             }
 
 
             .greeting {
-                font-size: 5rem;
+                font-size: 4rem;
                 font-weight: 200;
                 //text-transform: uppercase;
-                margin-top: 0px;
+                margin-top: 20px;
                 margin-bottom: 5px;
                 //padding-bottom: 50px;
                 //text-align: left;
@@ -500,8 +503,14 @@ header {
 
     .portfolio-text {
 
-        h3 {
+        p {
             text-transform: uppercase;
+            font-size: medium;
+        }
+
+        h3 {
+
+            font-size: x-large;
         }
     }
     
@@ -629,7 +638,7 @@ header {
         margin-left: -52px;
         flex-shrink: 0;
         overflow: hidden;
-        box-shadow: 0 0 0 6px $theme-primary;
+        box-shadow: 0 0 0 2px $theme-primary;
         svg {
             width: 20px;
             height: 20px;
@@ -646,7 +655,7 @@ header {
     .timeline-item-description {
         display: flex;
         padding-top: 6px;
-        gap: 8px;
+        gap: 12px;
         color: var(--c-grey-400);
 
         img {
@@ -672,18 +681,22 @@ header {
         font-size: 2rem;
         font-weight: 300;
 
-        margin-top: 24px;
+        margin-top: 36px;
 
         .timeline-item-icon {
             background-color: $theme-faded;
 
             width: 24px;
             height: 24px;
-            margin-left: -44px;
+            margin-left: -45px;
             svg {
                 width: 14px;
                 height: 14px;
             }
+        }
+
+        .timeline-item-description {
+            padding-left: 40px;
         }
     }
 

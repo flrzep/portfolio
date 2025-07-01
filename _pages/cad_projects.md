@@ -2,7 +2,7 @@
 layout: page
 title: CAD Projects
 category: project
-img: cad-banner_650x350
+img: cad-banner
 ---
 
 ## --- This page is a work in progress ---

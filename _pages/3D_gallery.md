@@ -16,7 +16,20 @@ Over the last couple of years, I have tried myself at learning the basics in Ble
 
 <br>
 
+<video class="portrait" autoplay muted loop width="600">
+  <source  src="{{ '/assets/video/eaf.mp4' | absolute_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 <img src="{{ '/assets/img/portfolio/arri-cloud.jpg' | absolute_url }}">
+
+<br>
+
+<video class="portrait" autoplay muted loop width="600">
+  <source  src="{{ '/assets/video/coil.mp4' | absolute_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 <br>
