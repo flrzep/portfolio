@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Building Puzzles and Escape Roomes for my Friends
+title: Building Puzzles and Escape Rooms for my Friends
 category: project
 img: puzzles
 ---
