@@ -57,6 +57,7 @@ p {
 
 section {
     padding: 100px 0;
+    border-top: solid;
 }
 
 aside {
@@ -109,7 +110,7 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color:  rgba(0, 0, 0, 0.2);
+        background-color:  rgba(0, 0, 0, 0.5);
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
@@ -185,9 +186,10 @@ header {
         flex-direction: row;
         gap: 100px;
         margin: auto;
-        padding: 50px;
-        width: 88vw;
-        height: 70vh;
+        width: 1500px;
+        max-width: 80vw;
+        height: 1200px;
+        max-height: 60vh;
         position: absolute;
         left: 50vw;
         top: 50vh;
@@ -197,7 +199,7 @@ header {
         transform: translate(-50%, -50%);
         // blur
 
-        border-style: solid;
+        //border-style: solid;
         border-width: 0.5px;
         border-radius: 20px; /* Optional: rounded corners */
 
@@ -206,9 +208,12 @@ header {
         //border: 1px solid rgba(255, 255, 255, 0.5); /* Optional: border for styling */
         //padding: 20px; /* Optional: space inside the div */
         color: white; /* Adjust text color for visibility */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */ 
+        
+        box-shadow: 12px 12px 3px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */ 
+        
+        
         margin-bottom: 0px;
-
+        
         
         
 
@@ -226,16 +231,32 @@ header {
             text-align: justify;
             text-align-last: center;
 
-            width: auto;
-            height: 80%;
+            padding: 10px 15% 10px 15%;
 
-            h1 {
-                font-weight: 700;
+            .name {
+                font-size: 3rem;
                 text-transform: uppercase;
+                color: rgba(white, 1.0);
+                text-align-last: left;
+            }
+
+            .description {
+                font-size: 2rem;
+                text-align-last: left;
+                color: rgba(white, .7);
+                margin-bottom: 40px;
+            }
+
+
+            .greeting {
+                font-size: 5rem;
+                font-weight: 200;
+                //text-transform: uppercase;
                 margin-top: 0px;
                 margin-bottom: 5px;
                 //padding-bottom: 50px;
-                text-align: left;
+                //text-align: left;
+                text-align-last: left;
                 line-height: normal;
                 vertical-align: top;
             }
@@ -243,11 +264,12 @@ header {
                 margin: 0px;
             }
             p {
+                
                 //width: 100%;
                 font-weight: 300;
                 width: fit-content;
-                color: rgba(white, .7);
-                font-size: 16px;
+                color: rgba(white, 1.0);
+                font-size: 3rem;
                 margin-bottom: 0px;
                 padding: 0px;
                 margin-bottom: 5px;
@@ -426,8 +448,10 @@ header {
                 //max-width: 1000px;
                 //margin: 0px;
 
+                
+
                 p {
-                    font-size: 18px;
+                    //font-size: 18px;
                     margin-bottom: 20px;
                 }
             }
@@ -463,11 +487,46 @@ header {
     }
 }
 
+.portfolio-section-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1400px;
+    margin: auto;
+    flex-wrap: no-wrap;
+    justify-content: flex-start;
+
+
+    .portfolio-text {
+
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+    
+
+}
+
 .portfolio-box {
     position: relative;
     display: block;
-    max-width: 650px;
+    width: 200px;
+    //max-width: 650px;
     margin: 0 auto;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    img {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        box-sizing: border-box;
+    }
+    
     .portfolio-box-caption {
         color: white;
         opacity: 0;
@@ -967,11 +1026,6 @@ dl {
     max-width: 100%;
     width: 100%;
 }
-
-.portfolio-box {   
-    max-width: 100%;
-    width: 100%;}
-
 
 .footer {
 

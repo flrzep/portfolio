@@ -2,7 +2,7 @@
 layout: page
 title: CAD Projects
 category: project
-img: blender_ma
+img: cad-banner_650x350
 ---
 
 

@@ -1,6 +1,6 @@
 title: "Flo's Portfolio"
 # this means to ignore newlines until "baseurl:"
-description: "blablabla blablabla blabla "
+description: "A showcase of my projects. This is one of them."
 
 email: "f.rzepczyk@gmail.com"
 domain: flrzep.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
