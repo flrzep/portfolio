@@ -23,9 +23,13 @@ let scene, camera, renderer, loader, currentModel, container, directionalLight, 
 
 let models = [
     '01_macropad.glb',
-    '02_putter.glb'
+    '02_putter.glb',
+    '03_3010-air-duct-mk2.glb',
+    '04_hebel_pumpgerät.glb'
 ]; // Define model in a higher scope
 
+
+let model_scale = [4, 4, 0.01, 0.01]
 var modelNr = 0;
 
 
@@ -83,7 +87,7 @@ function updateCamera() {
 }
 
 
-function loadModel(modelPath) {
+function loadModel(modelPath, n) {
     if (currentModel) {
         scene.remove(currentModel); // Remove old model
     }
@@ -93,7 +97,8 @@ function loadModel(modelPath) {
         scene.add(currentModel);
         
         currentModel.position.set(0, 0, 0);
-        currentModel.scale.set(4, 4, 4);
+        currentModel.scale.set(model_scale[n], model_scale[n], model_scale[n]);
+
     });
 }
 
@@ -124,7 +129,7 @@ function changeModel() {
 
     console.log(newModelPath);
 
-    loadModel(newModelPath);
+    loadModel(newModelPath, modelNr);
 }
 
 

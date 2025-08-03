@@ -359,7 +359,7 @@ header {
 
         position: sticky;
         top: 50px;
-        padding: 10px;
+        padding: 30px;
         margin-top: 50px;
         margin-bottom: 50px;
         padding-bottom: 20px;
@@ -412,7 +412,31 @@ header {
             margin: auto;
 
         }
+
+        .small {
+            display: block;
+            width: 66%;
+            margin: auto;
+        }
+
+        .small-portrait {
+            display: block;
+            width: 30%;
+            margin: auto;
+        }
         
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: auto;
+            margin: auto;
+
+            .small {
+                width: 45%;
+            }
+        } 
     }
 
 }
