@@ -83,9 +83,10 @@ On the oher hand it allows us to use metal parts to improve the feel and quality
 
 ## 5. First Prototype
 
-To decide on the final dimensions I printed the critical middle part in multiple versions and setup a testing matrix to find the idal one for each of the strap materials I tested. Resulting in a 3x7 Matrix to evaluate materials and denote the corresponding ideal width of slot in the slide buckle. 
+To decide on the final dimensions I printed the critical middle part in multiple versions and setup a testing matrix to find the ideal one for each of the strap materials I tested. Resulting in a Matrix to evaluate materials and denote the corresponding ideal width of slot in the slide buckle. 
 
-The leaver on the slide buckle works as expected, but predicably only in one direction.
+I landed on a premium cotton weave, 24mm in width. The feel and cost were superior to the other 6 options that were tested. That decision left me with the slot width of 4mm working best. Giving a solid and secure feel, but the buckle is still easily adjustable.
+
 <br>
 
 <img src="{{ '/assets/img/portfolio/sdc_4.png' | absolute_url }}" class="small">
