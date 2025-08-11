@@ -5,7 +5,7 @@ description: "A showcase of my projects. This is one of them."
 email: "f.rzepczyk@gmail.com"
 domain: florianrzepczyk.com       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://florianrzepczyk.com #https://flrzep.github.io/  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /portfolio      # place folder name if the site is served in a subfolder
+baseurl: /      # place folder name if the site is served in a subfolder
 
 linkedin_username: florianrzepczyk
 github_username: flrzep
